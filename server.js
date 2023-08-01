@@ -20,7 +20,7 @@ app.listen(4000, function check(error){
 
 //connect to MongoDB
 mongoose.set("strictQuery", false);
-mongoose.connect("mongodb://127.0.0.1:27017/incident",{useNewUrlParser: true, useUnifiedTopology: true}, 
+mongoose.connect("mongodb+srv://krunalsukhwani:FuMAiuIkmGPEpebP@cluster0.eshxs89.mongodb.net/incident",{useNewUrlParser: true, useUnifiedTopology: true}, 
 function checkMongoDBConnection(error){
     if(error){
         console.log("Error in MongoDB Connection");
